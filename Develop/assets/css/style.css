@@ -3,18 +3,32 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: #ffffff;
 }
 
 /*set background page color*/
-{
+body {
     background-color: #d9dcd6;
+
 }
 
-header { /*adjusted header to properly coordinate with updating the class to a div in HTML*/
+/*insert background image before main*/
+main:before {
+    content: "";
+    display: block;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*adjusted header to properly coordinate with updating the class to a div in HTML*/
+header { 
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
 }
 
 header h1 {
@@ -190,7 +204,8 @@ p {
     font-size: 36px;
 }
 
-footer { /*adjusted footer to properly coordinate with updating the class to a div in HTML*/
+/*adjusted footer to properly coordinate with updating the class to a div in HTML*/
+footer { 
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
